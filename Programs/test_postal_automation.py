@@ -29,8 +29,7 @@ def test_postal_login():
     cash = driver.find_element(By.XPATH,"//input[@id = 'CustomAgentRDAccountFG.PAY_MODE_SELECTED_FOR_TRN' and @value ='C']")
     cash.click()
     account_id = driver.find_element(By.NAME, "CustomAgentRDAccountFG.ACCOUNT_NUMBER_FOR_SEARCH")
-    account_id.send_keys("020000056862,020000633166,020005217365,020000668542,020010599107,020016309842,020021973137,"
-                         "020057993889,4677849450,4584750887")
+    account_id.send_keys()
     fetch = driver.find_element(By.XPATH,"//input[@name='Action.FETCH_INPUT_ACCOUNT']")
     fetch.click()
     time.sleep(5)
