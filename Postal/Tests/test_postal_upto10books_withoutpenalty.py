@@ -41,7 +41,7 @@ def test_postal_login():
     cash = driver.find_element(By.XPATH,"//input[@id = 'CustomAgentRDAccountFG.PAY_MODE_SELECTED_FOR_TRN' and @value ='C']")
     cash.click()
     account_id = driver.find_element(By.NAME, "CustomAgentRDAccountFG.ACCOUNT_NUMBER_FOR_SEARCH")
-    workbook = load_workbook('/Users/Ganesh/Postal-Automation/Tests/Data/Account_Numbers.xlsx')
+    workbook = load_workbook('/Postal/Data/Account_Numbers.xlsx')
     sheet = workbook['Sheet2']
     account_no = sheet.cell(row=1, column=1).value
     account_id.send_keys(account_no)
