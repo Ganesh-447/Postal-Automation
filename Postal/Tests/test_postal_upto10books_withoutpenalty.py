@@ -55,7 +55,7 @@ def test_postal_upto_10books():
     select_book = driver.find_elements(By.XPATH,"//input[@type='checkbox']")
     for checkbox in select_book:
         checkbox.click()
-    #time.sleep(40)
+    # time.sleep(40)
     save = driver.find_element(By.XPATH,"//input[@name='Action.SAVE_ACCOUNTS']")
     save.click()
     # WebDriverWait(driver, 25).until(
@@ -65,7 +65,7 @@ def test_postal_upto_10books():
     # pay_all = driver.find_element(By.XPATH,"//input[@value='Pay All Saved Installments']")
     # pay_all.click()
     # WebDriverWait(driver, 25).until(
-    #     EC.text_to_be_present_in_element((By.XPATH, "//span[contains(text(),'Selected Recurring Deposit Account List')]"),
+    # EC.text_to_be_present_in_element((By.XPATH, "//span[contains(text(),'Selected Recurring Deposit Account List')]"),
     #                                      "Selected Recurring Deposit Account List")
     # )
     time.sleep(5)
