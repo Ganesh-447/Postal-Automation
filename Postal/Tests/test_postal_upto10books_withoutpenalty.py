@@ -70,7 +70,6 @@ def test_postal_upto_10books():
     # )
     time.sleep(5)
     driver.save_screenshot("screenshot.png")
-
     time.sleep(4 * 60 * 60)  # 4 hours
 
 
